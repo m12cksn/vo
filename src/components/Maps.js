@@ -2,7 +2,7 @@ import React from "react";
 
 const Maps = () => {
   return (
-    <div className="max-w-xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl lg:container px-5 mx-auto mb-16">
+    <div className="max-w-xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl py-10 lg:container px-5 mx-auto mb-16">
       <div className="flex justify-center items-center gap-4  xl:pb-5 ">
         <h1 className="md:text-3xl text-center font-semibold mb-2">
           Lokasi PT. Mitra Solusi Wicaksana

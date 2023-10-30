@@ -55,12 +55,8 @@ const Whyus = () => {
             Kenapa Kami ?
           </h1>
           <h1 className="mt-5 text-3xl leading-snug lg:text-[2.4rem]  lg:leading-normal lg:tracking-wide xl:leading-snug font-bold text-slate-100">
-            Cari kantor Private dengan banyak fasilitas menarik ?
-            <span className="font-extrabold border-b-4 border-third ">
-              Smart<span className="text-third">Office</span>Vo
-            </span>
-            <br />
-            Solusinya !!!
+            Mengapa harus mempercayakan layanan Virtual Office pada
+            SmartOfficeVo ??
           </h1>
           {/*  */}
           <div className="mt-7 lg:mt-3  md:grid grid-cols-2 lg:grid-cols-2">

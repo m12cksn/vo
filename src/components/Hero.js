@@ -50,7 +50,7 @@ const Hero = () => {
           </p>
           <ul className="mt-5 sm:grid grid-cols-2">
             {heroes.map((hero, index) => (
-              <li className="flex items-center gap-3 mt-4">
+              <li key={index} className="flex items-center gap-3 mt-4">
                 <AiFillCheckCircle className="text-2xl md:text-2xl  bg-third rounded-full text-secondary" />{" "}
                 <span className="text-slate-400 text-[1.05rem]  md:text-[1.3rem] sm:text-lg  tracking">
                   {hero}
