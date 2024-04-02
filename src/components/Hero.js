@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="relative basis-[45%] xl:basis-1/2 z-30 w-full lg:max-w-md xl:max-w-lg 2xl:basis-[55%] 2xl:max-w-xl 0 h-auto">
           <Image
             className=" w-full  h-auto object-center object-cover"
-            src={"/image/logofix2.png"}
+            src={"/image/herofix.webp"}
             width={1000}
             height={1000}
             alt="Cruise"

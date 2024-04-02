@@ -12,19 +12,9 @@ const Service = () => {
       desc: "Alamat perkantoran berada di lokasi yang strategis, mudah diakses, yang akan meningkatkan kredibilitas usaha Anda",
     },
     {
-      icon: FaCity,
-      title: "Berada di 5 Kota besar di Indonesia",
-      desc: "Saat ini,Mitra Solusi Wicaksana memiliki layanan perkantoran di 5 kota besar, yaitu: Bandung, Jakarta, Bekasi, Bogor, dan Tangerang.",
-    },
-    {
       icon: GiPriceTag,
       title: "Fasilitas terbaik dengan harga terjangkau",
       desc: "Mitra Solusi Wicaksana menawarkan layanan Virtual Office dengan harga termurah, dengan banyak fasilitas yang terjangkau setiap bulannya",
-    },
-    {
-      icon: BsBookmarkCheckFill,
-      title: "Terpercaya 100% Kepuasaan Client",
-      desc: "Mitra Solusi Wicaksana telah berpengalaman, dan tersertifikasi untuk menjamin kepuasan pelanggan 100%.",
     },
   ];
   return (
@@ -33,7 +23,7 @@ const Service = () => {
         <div className="relative basis-[55%] xl:basis-1/2 z-30 w-full lg:max-w-lg xl:max-w-xl 2xl:basis-[55%] 2xl:max-w-2xl 0 h-auto ">
           <Image
             className=" w-full  h-auto object-center object-cover"
-            src={"/image/servicefix2.png"}
+            src={"/image/serviceokefix.webp"}
             width={1000}
             height={1000}
             alt="Cruise"

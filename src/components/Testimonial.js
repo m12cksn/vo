@@ -18,7 +18,7 @@ const Testimonial = () => {
             <div className="basis-[45%]">
               <Image
                 className="mt-10 w-72 xl:w-96 mx-auto rounded-tr-3xl rounded-bl-2xl h-auto object-center object-cover"
-                src={"/image/testimoni.jpg"}
+                src={"/image/logovo.jpg"}
                 width={1000}
                 height={1000}
                 alt="Cruise"
@@ -34,9 +34,9 @@ const Testimonial = () => {
                 <TbStarFilled />
               </div>
               <h1 className="text-xl text-slate-400 mt-5 tracking-wide leading-normal lg:text-justify">
-                “Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-                auctor. Vestibulum ligula porta felis euismod semper. Cras justo
-                odio consectetur nulla dapibus curabitur blandit faucibus.”
+                “SmartOffice” Presented By PT. Mitra Solusi Wicaksana Lippo
+                Tower Holland Village Jakarta Lantai 29 Unit 2910 Jalan Ahmad
+                Yani Kav. 60 No.1, Cempaka Putih, Jakarta Pusat 10510
               </h1>
               <h5 className="mt-4 text-lg text-slate-100">Iwan Setiawan</h5>
               <p className="italic text-slate-400">Sales Manager</p>
