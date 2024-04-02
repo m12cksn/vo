@@ -38,8 +38,7 @@ const Testimonial = () => {
                 Tower Holland Village Jakarta Lantai 29 Unit 2910 Jalan Ahmad
                 Yani Kav. 60 No.1, Cempaka Putih, Jakarta Pusat 10510
               </h1>
-              <h5 className="mt-4 text-lg text-slate-100">Iwan Setiawan</h5>
-              <p className="italic text-slate-400">Sales Manager</p>
+
               <div className="flex gap-3 mt-5">
                 <BsArrowLeftSquareFill className="text-third text-5xl hover:text-secondary hover:bg-third duration-300 ease-in-out transition-all " />
                 <BsArrowRightSquareFill className="text-third text-5xl hover:text-secondary hover:bg-third duration-300 ease-in-out transition-all " />
