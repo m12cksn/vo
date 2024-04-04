@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import Logo from "@/components/Logo";
 import Maps from "@/components/Maps";
 import Navbar from "@/components/Navbar";
+import Pricing from "@/components/Pricing";
 import Service from "@/components/Service";
 import Testimonial from "@/components/Testimonial";
 import Whyus from "@/components/Whyus";
@@ -19,6 +20,7 @@ export default function Home() {
       <Logo />
       <Service />
       <Whyus />
+      <Pricing />
       <Maps />
       <Testimonial />
       <Footer />

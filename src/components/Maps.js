@@ -3,9 +3,12 @@ import React from "react";
 const Maps = () => {
   return (
     <div className="max-w-xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl py-10 lg:container px-5 mx-auto mb-16">
-      <div className="flex justify-center items-center gap-4  xl:pb-5 ">
-        <h1 className="md:text-3xl text-center font-semibold mb-2">
-          Lokasi PT. Mitra Solusi Wicaksana
+      <div className="flex justify-center items-center  flex-col  xl:pb-5 ">
+        <h1 className="md:text-3xl text-2xl  text-center font-semibold">
+          Lokasi
+        </h1>
+        <h1 className="md:text-3xl text-2xl  text-center font-semibold mb-5">
+          PT. Mitra Solusi Wicaksana
         </h1>
       </div>
       <iframe
