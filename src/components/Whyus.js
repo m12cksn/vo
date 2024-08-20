@@ -3,6 +3,7 @@ import Image from "next/image";
 import { GiPriceTag } from "react-icons/gi";
 import { BsBookmarkCheckFill } from "react-icons/bs";
 import { FaMapLocation, FaCity } from "react-icons/fa6";
+import Pricing from "./Pricing";
 
 const Whyus = () => {
   const features = [
@@ -33,7 +34,7 @@ const Whyus = () => {
         <div className="relative basis-[40%] xl:basis-[60%] z-30 w-full lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl   0 h-auto ">
           <Image
             className=" w-full  h-auto object-center object-cover"
-            src={"/image/whyusfix2.png"}
+            src={"/image/herofix.webp"}
             width={1000}
             height={1000}
             alt="Cruise"
@@ -58,29 +59,7 @@ const Whyus = () => {
             Mengapa harus mempercayakan layanan Virtual Office pada
             SmartOfficeVo ??
           </h1>
-          {/*  */}
-          <div className="mt-7 lg:mt-3  md:grid grid-cols-2 lg:grid-cols-2">
-            {features.map((feature, index) => (
-              <div
-                key={index}
-                className=" lg:mt-5 items-start md:items-center gap-5 lg:pr-10 py-3 md:pr-10 md:py-5  lg:p-2"
-              >
-                <div className="flex gap-1 tracking-wide">
-                  <h1 className="text-third font-bold text-lg xl:text-2xl">
-                    {feature.number}
-                  </h1>
-                  <h2 className="font-bold text-xl text-slate-300 xl:text-2xl">
-                    {feature.title}
-                  </h2>
-                </div>
-                <div className="">
-                  <p className=" leading-snug text-justify mt-1 text-slate-400 lg:leading-normal lg:text-base xl:text-lg tracking-wide  ">
-                    {feature.desc}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <Pricing />
         </div>
       </div>
     </div>

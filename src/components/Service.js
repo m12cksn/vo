@@ -16,6 +16,16 @@ const Service = () => {
       title: "Fasilitas terbaik dengan harga terjangkau",
       desc: "Mitra Solusi Wicaksana menawarkan layanan Virtual Office dengan harga termurah, dengan banyak fasilitas yang terjangkau setiap bulannya",
     },
+    {
+      icon: FaMapLocation,
+      title: "Satu-satunya yang menyediakan konsultasi hukum gratis",
+      desc: "Alamat perkantoran berada di lokasi yang strategis, mudah diakses, yang akan meningkatkan kredibilitas usaha Anda",
+    },
+    {
+      icon: GiPriceTag,
+      title: "VO & Co Working space Bersertifikasi",
+      desc: "Mitra Solusi Wicaksana menawarkan layanan Virtual Office dengan harga termurah, dengan banyak fasilitas yang terjangkau setiap bulannya",
+    },
   ];
   return (
     <div className="w-full ">

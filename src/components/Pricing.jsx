@@ -61,7 +61,7 @@ const Pricing = () => {
   };
   return (
     <div className="">
-      <h1 className="text-center pt-5 pb-7 sm:pt-8 sm:pb-10 text-2xl md:text-3xl md:pt-10 md:pb-12 font-semibold text-slate-900">
+      <h1 className="text-center pt-5 pb-7 sm:pt-8 sm:pb-10 text-2xl md:text-3xl md:pt-10 md:pb-12 font-semibold text-slate-400">
         Choose a plan and Start Your business today
       </h1>
       <div className="sm:max-w-3xl md:max-w-4xl mx-auto xl:max-w-7xl">

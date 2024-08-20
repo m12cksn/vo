@@ -42,7 +42,7 @@ const Footer = () => {
             </p>
             <div className="mt-5">
               <p className="text-slate-500">ptmitrasolusiwicaksana@gmail.com</p>
-              <p className="text-slate-500">+62 822-1020-0085</p>
+              <p className="text-slate-500">+62 888-8777-500</p>
             </div>
           </div>
           <div className="mt-10 md:mt-0 basis-1/3">
