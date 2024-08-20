@@ -44,9 +44,9 @@ const Hero = () => {
             Menyediakan Layanan Virtual Office dan Perizinan Usaha
           </h1>
           <p className="mt-5 sm:leading-relaxed sm:text-justify text-slate-400 leading-normal text-[1.43rem] md:mt-2">
-            Bangun keberadaan perusahaan Anda dengan SmartOfficeVO. Jaringan
-            kami yang luas memberikan Anda alamat bisnis nyata di lokasi
-            strategis,
+            Bangun keberadaan perusahaan Anda dengan Smart Office and Coworking
+            Space. Jaringan kami yang luas memberikan Anda alamat bisnis nyata
+            di lokasi strategis,
           </p>
           <ul className="mt-5 sm:grid grid-cols-2">
             {heroes.map((hero, index) => (
