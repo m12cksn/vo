@@ -8,8 +8,9 @@ const space = Space_Grotesk({
 });
 
 export const metadata = {
-  title: "Smart Office VO",
-  description: "Penyedia layanan virtual office",
+  title: "Virtual Office SmartOffice",
+  description:
+    "Sewa Virtual Office per tahun mulai dari 1jt/th atau spaceworking mulai dari 55rb/jam",
 };
 
 export default function RootLayout({ children }) {
