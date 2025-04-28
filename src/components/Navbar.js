@@ -37,8 +37,8 @@ const Navbar = () => {
     { name: "Contact", href: "/contact" },
   ];
   return (
-    <header className=" shadow bg-[#000] w-full ease-in-out duration-500  z-50">
-      <nav className="max-w-[1366px] mx-auto  container flex justify-between items-center py-5 md:py-6 lg:py-6 px-4 md:px-8 lg:px-10">
+    <header className=" fixed shadow bg-[#000] w-full ease-in-out duration-500  z-50">
+      <nav className="max-w-lg  sm:max-w-2xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto  container flex justify-between items-center py-5 md:py-6 lg:py-6 px-4 md:px-8 lg:px-10">
         <div className="flex items-center gap-2">
           <div>
             <Image
@@ -79,51 +79,52 @@ const Navbar = () => {
           className="block lg:hidden focus:outline-none text-2xl z-50 "
         >
           {isMenuOpen ? (
-            <IoCloseSharp className="text-3xl text-blue-900 font-bold " /> // Icon close (✖)
+            <IoCloseSharp className="text-3xl text-third font-bold " /> // Icon close (✖)
           ) : (
-            <TiThMenu className="text-3xl text-blue-900 font-bold " /> // Icon menu (☰)
+            <TiThMenu className="text-3xl text-third font-bold " /> // Icon menu (☰)
           )}
         </button>
 
+        {/* Mobile Menu */}
         <div
-          className={`absolute top-0 left-0 w-full bg-white z-40 transition-all duration-300 ease-in-out ${
+          className={`absolute top-0 left-0 w-full bg-secondary z-40 transition-all duration-300 ease-in-out ${
             isMenuOpen
               ? "translate-y-0 opacity-100"
               : "-translate-y-full opacity-0"
           }`}
         >
-          <div className="flex flex-col lg:hidden items-center space-y-4 py-6">
+          <div className="flex flex-col lg:hidden items-center max-w-xl mx-auto space-y-4 py-6">
             <Link
               href="/"
-              className="hover:text-blue-500  w-full text-center py-5 text-3xl font-bold text-blue-900 transition-all duration-300 ease-in-out"
+              className="hover:text-blue-500  w-full text-center py-5 text-2xl border-b-4 border-third font-bold text-third transition-all duration-300 ease-in-out"
               onClick={closeMenu}
             >
               Home
             </Link>
             <Link
               href="#hero"
-              className="hover:text-blue-500  w-full text-center py-5 text-3xl font-bold text-blue-900 transition-all duration-300 ease-in-out"
+              className="hover:text-blue-500  w-full text-center py-5 text-2xl border-b-4 border-third font-bold text-third transition-all duration-300 ease-in-out"
               onClick={closeMenu}
             >
               About
             </Link>
             <Link
               href="#produk"
-              className="hover:text-blue-500  w-full text-center py-5 text-3xl font-bold text-blue-900 transition-all duration-300 ease-in-out"
+              className="hover:text-blue-500  w-full text-center py-5 text-2xl border-b-4 border-third font-bold text-third transition-all duration-300 ease-in-out"
               onClick={closeMenu}
             >
               Pricing
             </Link>
             <Link
               href="#gallery"
-              className="hover:text-blue-500  w-full text-center py-5 text-3xl font-bold text-blue-900 transition-all duration-300 ease-in-out"
+              className="hover:text-blue-500  w-full text-center py-5 text-2xl border-b-4 border-third font-bold text-third transition-all duration-300 ease-in-out"
               onClick={closeMenu}
             >
               FAQ
             </Link>
             <Link
               href="#tentang"
-              className="hover:text-blue-500  w-full text-center py-5 text-3xl font-bold text-blue-900 transition-all duration-300 ease-in-out"
+              className="hover:text-blue-500  w-full text-center py-5 text-2xl border-b-4 border-third font-bold text-third transition-all duration-300 ease-in-out"
               onClick={closeMenu}
             >
               Contact
@@ -135,85 +136,6 @@ const Navbar = () => {
             >
               Get a consult
             </Link>
-          </div>
-        </div>
-
-        <div
-          className={
-            menuIcon
-              ? "md:hidden absolute top-[67px] right-0 bottom-0 z-50 left-0 flex justify-center items-start pt-14 w-full h-screen bg-slate-800 text-white ease-in-out duration-500"
-              : "md:hidden absolute top-[67px] right-0 z-50  -left-[45rem] flex justify-center items-start pt-14 w-full h-screen  bg-slate-800 text-white ease-in-out duration-500"
-          }
-        >
-          <div className="w-full">
-            <ul className="uppercase font-bold text-lg flex flex-col justify-center ml-10 gap-7">
-              <li
-                onClick={handleSmallerScreenNavigation}
-                className="font-semibold  ease-in-out duration-150 transition-all"
-              >
-                <Link
-                  className="border-b-4 hover:border-b-third  hover:text-third transition-all duration-300 ease-in-out "
-                  href="/"
-                >
-                  Home
-                </Link>
-              </li>
-              <li
-                onClick={handleSmallerScreenNavigation}
-                className="font-semibold hover:text-secondary ease-in-out duration-150 transition-all"
-              >
-                <Link
-                  className="border-b-4 hover:border-b-third  hover:text-third transition-all duration-300 ease-in-out "
-                  href="/about"
-                >
-                  About
-                </Link>
-              </li>
-              <li
-                onClick={handleSmallerScreenNavigation}
-                className="font-semibold hover:text-secondary ease-in-out duration-150 transition-all"
-              >
-                <Link
-                  className="border-b-4 hover:border-b-third  hover:text-third transition-all duration-300 ease-in-out "
-                  href="/pricing"
-                >
-                  Pricing
-                </Link>
-              </li>
-              <li
-                onClick={handleSmallerScreenNavigation}
-                className="font-semibold hover:text-secondary ease-in-out duration-150 transition-all"
-              >
-                <Link
-                  className="border-b-4 hover:border-b-third  hover:text-third transition-all duration-300 ease-in-out "
-                  href="/faq"
-                >
-                  faq
-                </Link>
-              </li>
-              <li
-                onClick={handleSmallerScreenNavigation}
-                className="font-semibold hover:text-secondary ease-in-out duration-150 transition-all"
-              >
-                <Link
-                  className="border-b-4 hover:border-b-third  hover:text-third transition-all duration-300 ease-in-out "
-                  href="/contact"
-                >
-                  Contact
-                </Link>
-              </li>
-            </ul>
-            <div className=" ml-10 mt-8">
-              <Link
-                className="bg-third hover:text-third hover:bg-secondary px-4 py-3 font-semibold  text-secondary inline-flex items-center gap-1 tracking-wider uppercase rounded shadow"
-                href="#"
-              >
-                More Info{" "}
-                <span>
-                  <PiPhoneCallFill />
-                </span>
-              </Link>
-            </div>
           </div>
         </div>
 

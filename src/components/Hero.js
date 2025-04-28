@@ -37,9 +37,6 @@ const Hero = () => {
         </div>
 
         <div className="pt-12 lg:pt-0 basis-[55%] 2xl:basis-[45%] xl:basis-1/2">
-          <h1 className="px-3 py-2 track uppercase rounded-sm shadow-md text-secondary text-xs font-semibold bg-third inline-block lg:text-base">
-        Iwan Setiawan
-          </h1>
           <h1 className="mt-5 leading-normal text-4xl sm:text-[2.7rem] font-bold text-slate-100">
             Menyediakan Layanan Virtual Office dan Perizinan Usaha
           </h1>
