@@ -58,29 +58,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="mt-10">
-          <h1 className="text-slate-800 font-semibold  text-xl mb-3">
-            Our Newsletter
-          </h1>
-          <h2 className="text-slate-500">
-            Subscribe to our newsletter to get our news & deals delivered to
-            you.
-          </h2>
-          <div className="flex rounded-lg overflow-hidden drop-shadow-md mt-5">
-            <input
-              type="text"
-              placeholder="E-mail Address"
-              id="large-input"
-              className="block w-full p-3 text-gray-900 bg-white sm:text-md focus:ring-blue-500 focus:border-blue-500 "
-            ></input>
-            <button
-              className="bg-third text-slate-50 font-semibold px-7"
-              type="submit"
-            >
-              Submit
-            </button>
-          </div>
-        </div>
       </div>
       <hr className="my-6 container border-solid border-x-8 border-third sm:mx-auto  lg:my-8" />
       <span className="block pb-5 text-sm text-gray-700 sm:text-center ">
