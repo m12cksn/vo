@@ -34,7 +34,6 @@ const Navbar = () => {
     { name: "About", href: "/about" },
     { name: "Pricing", href: "/pricing" },
     { name: "FAQ", href: "/faq" },
-    { name: "Contact", href: "/contact" },
   ];
   return (
     <header className=" fixed shadow bg-[#000] w-full ease-in-out duration-500  z-50">
@@ -94,54 +93,33 @@ const Navbar = () => {
           }`}
         >
           <div className="flex flex-col lg:hidden items-center max-w-xl mx-auto space-y-4 py-6">
+            {navLinks.map((link, index) => (
+              <Link
+                key={index}
+                href={link.href}
+                className={`w-full text-center py-5 text-2xl border-b-4 font-bold transition-all duration-300 ease-in-out ${
+                  pathname === link.href
+                    ? "text-third border-third"
+                    : "text-white hover:text-third order-b-4 "
+                }`}
+                onClick={closeMenu}
+              >
+                {link.name}
+              </Link>
+            ))}
             <Link
-              href="/"
-              className="hover:text-blue-500  w-full text-center py-5 text-2xl border-b-4 border-third font-bold text-third transition-all duration-300 ease-in-out"
-              onClick={closeMenu}
-            >
-              Home
-            </Link>
-            <Link
-              href="#hero"
-              className="hover:text-blue-500  w-full text-center py-5 text-2xl border-b-4 border-third font-bold text-third transition-all duration-300 ease-in-out"
-              onClick={closeMenu}
-            >
-              About
-            </Link>
-            <Link
-              href="#produk"
-              className="hover:text-blue-500  w-full text-center py-5 text-2xl border-b-4 border-third font-bold text-third transition-all duration-300 ease-in-out"
-              onClick={closeMenu}
-            >
-              Pricing
-            </Link>
-            <Link
-              href="#gallery"
-              className="hover:text-blue-500  w-full text-center py-5 text-2xl border-b-4 border-third font-bold text-third transition-all duration-300 ease-in-out"
-              onClick={closeMenu}
-            >
-              FAQ
-            </Link>
-            <Link
-              href="#tentang"
-              className="hover:text-blue-500  w-full text-center py-5 text-2xl border-b-4 border-third font-bold text-third transition-all duration-300 ease-in-out"
+              href="/contact"
+              className="bg-third text-white px-10 py-2 text-xl font-semibold rounded hover:bg-blue-500"
               onClick={closeMenu}
             >
               Contact
-            </Link>
-            <Link
-              href={whatsappText}
-              className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-teal-600"
-              onClick={closeMenu}
-            >
-              Get a consult
             </Link>
           </div>
         </div>
 
         <div className="hidden lg:block">
           <Link
-            className="bg-third px-4 py-2 font-semibold  text-secondary inline-flex items-center gap-1 tracking-wider uppercase rounded shadow"
+            className="bg-third px-4 py-2 font-semibold hover:bg-blue-500 transition-all duration-100 ease-in-out text-secondary inline-flex items-center gap-1 tracking-wider uppercase rounded shadow"
             href="/contact"
           >
             Contact

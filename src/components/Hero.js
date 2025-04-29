@@ -38,12 +38,14 @@ const Hero = () => {
 
         <div className="pt-12 lg:pt-0 basis-[55%] 2xl:basis-[45%] xl:basis-1/2">
           <h1 className="mt-5 leading-normal text-4xl sm:text-[2.7rem] font-bold text-slate-100">
-            Menyediakan Layanan Virtual Office dan Perizinan Usaha
+            SmartOfficeVo
           </h1>
           <p className="mt-5 sm:leading-relaxed sm:text-justify text-slate-400 leading-normal text-[1.43rem] md:mt-2">
-            Bangun keberadaan perusahaan Anda dengan Smart Office and Coworking
-            Space. Jaringan kami yang luas memberikan Anda alamat bisnis nyata
-            di lokasi strategis,
+            Menyediakan Layanan lengkap untuk kebutuhan dan membangun keberadaan
+            bisnis Anda, mulai dari Virtual Office, Coworking Space, Virtual
+            Assistant, Pengurusan Izin Usaha. Kami berkomitmen untuk membantu
+            Anda menjalankan bisnis dengan lebih mudah dan efisien melalui
+            solusi yang inovatif dan terintegrasi.
           </p>
           <ul className="mt-5 sm:grid grid-cols-2">
             {heroes.map((hero, index) => (
@@ -58,9 +60,9 @@ const Hero = () => {
           <div className="mt-8 rounded sm:rounded-md group bg-red-50 inline-block overflow-hidden ">
             <Link
               className="bg-third group-hover:-translate-y-2 transition-all ease-in-out duration-500  inline-flex items-center gap-2 shadow-md text-secondary px-4 py-3 "
-              href="#"
+              href="/contact"
             >
-              Explore Now{" "}
+              Hubungi Sekarang{" "}
               <span>
                 <SiAzuredataexplorer className="" />
               </span>
