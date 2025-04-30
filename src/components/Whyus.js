@@ -1,69 +1,53 @@
 import React from "react";
 import Image from "next/image";
-import { GiPriceTag } from "react-icons/gi";
-import { BsBookmarkCheckFill } from "react-icons/bs";
-import { FaMapLocation, FaCity } from "react-icons/fa6";
 import Pricing from "./Pricing";
 
-const Whyus = () => {
-  const features = [
-    {
-      number: "1.",
-      title: "Creativity",
-      desc: "Curabitur blandit lacus magna ridiculus mus duis mollis.",
-    },
-    {
-      number: "2.",
-      title: "Creativity",
-      desc: "Curabitur blandit lacus magna ridiculus mus duis mollis.",
-    },
-    {
-      number: "3.",
-      title: "Creativity",
-      desc: "Curabitur blandit lacus magna ridiculus mus duis mollis.",
-    },
-    {
-      number: "4.",
-      title: "Creativity",
-      desc: "Curabitur blandit lacus magna ridiculus mus duis mollis.",
-    },
-  ];
+const WhyUs = () => {
   return (
-    <div className="w-full bg-secondary ">
-      <div className="max-w-lg md:flex-row-reverse sm:max-w-2xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto gap-8 2xl:gap-12 px-5 sm:px-8 pt-28 pb-24 md:px-10 xl:px-0 lg:flex  justify-between items-center   ">
-        <div className="relative basis-[40%] xl:basis-[60%] z-30 w-full lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl   0 h-auto ">
+    <section className="w-full bg-secondary">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 pt-28 pb-12 lg:flex items-center justify-between gap-10">
+        {/* Bagian Gambar */}
+        <div className="relative basis-[50%] mb-10 lg:mb-0">
           <Image
-            className=" w-full  h-auto object-center object-cover"
-            src={"/image/herofix.webp"}
+            className="w-full h-auto rounded-xl shadow-lg"
+            src="/image/herofix.webp"
             width={1000}
             height={1000}
-            alt="Cruise"
-            priority={true}
+            alt="Hero Virtual Office"
+            priority
           />
-
           <Image
-            className="absolute w-24 top-3 right-3  sm:w-32  h-auto object-center object-cover"
-            src={"/image/svg/logo.svg"}
-            width={1000}
-            height={1000}
-            alt="Cruise"
-            priority={true}
+            className="absolute top-3 right-3 w-24 sm:w-32"
+            src="/image/svg/logo.svg"
+            width={100}
+            height={100}
+            alt="Logo"
+            priority
           />
         </div>
 
-        <div className="pt-12 lg:pt-0 basis-[55%]  xl:basis-[45%] ">
-          <h1 className="px-3 py-2 track uppercase rounded-sm shadow-md text-secondary text-sm tracking-wide font-semibold bg-third inline-block lg:text-base bg-">
-            Kenapa Kami ?
-          </h1>
-          <h1 className="mt-5 text-3xl leading-snug lg:text-[2.4rem]  lg:leading-normal lg:tracking-wide xl:leading-snug font-bold text-slate-100">
+        {/* Bagian Deskripsi */}
+        <div className="basis-[50%]">
+          <h2 className="px-4 py-2 bg-third text-secondary font-semibold text-sm rounded mb-4 inline-block uppercase tracking-wide shadow-sm">
+            Kenapa Kami?
+          </h2>
+          <h1 className="text-white text-3xl sm:text-4xl font-bold leading-snug mb-6">
             Mengapa harus mempercayakan layanan Virtual Office pada
-            SmartOfficeVo ??
+            SmartOfficeVo?
           </h1>
-          <Pricing />
+          <p className="text-gray-300 text-base leading-relaxed mb-6">
+            Kami menyediakan layanan Virtual Office yang lengkap dengan alamat
+            legal, nomor telepon kantor, serta fasilitas ruang meeting.
+            Pelayanan cepat dan transparan, cocok untuk startup, UMKM, hingga
+            perusahaan besar.
+          </p>
         </div>
       </div>
-    </div>
+
+      {/* Pricing Table */}
+      <Pricing />
+    </section>
   );
 };
 
-export default Whyus;
+export default WhyUs;

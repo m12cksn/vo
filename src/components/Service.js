@@ -14,7 +14,7 @@ const Service = () => {
     {
       icon: GiPriceTag,
       title: "Fasilitas terbaik dengan harga terjangkau",
-      desc: "Mitra Solusi Wicaksana menawarkan layanan Virtual Office dengan harga termurah, dengan banyak fasilitas yang terjangkau setiap bulannya",
+      desc: "SmartOfficeVo menawarkan layanan Virtual Office dengan harga termurah, dengan banyak fasilitas yang terjangkau setiap bulannya",
     },
     {
       icon: FaMapLocation,
@@ -24,7 +24,7 @@ const Service = () => {
     {
       icon: GiPriceTag,
       title: "VO & Co Working space Bersertifikasi",
-      desc: "Mitra Solusi Wicaksana menawarkan layanan Virtual Office dengan harga termurah, dengan banyak fasilitas yang terjangkau setiap bulannya",
+      desc: "SmartOfficeVo menawarkan layanan Virtual Office dengan harga termurah, dengan banyak fasilitas yang terjangkau setiap bulannya",
     },
   ];
   return (
@@ -86,6 +86,21 @@ const Service = () => {
             ))}
           </div>
         </div>
+      </div>
+      <div className="max-w-4xl mx-auto text-center px-5 pb-20">
+        <Image
+          src="/image/sov2.webp"
+          width={600}
+          height={400}
+          className="mx-auto rounded-md shadow-lg"
+          alt="Virtual Assistant"
+        />
+        <h3 className="mt-8 text-2xl font-bold text-slate-700">
+          Kami juga memiliki Virtual Assistant
+        </h3>
+        <p className="mt-3 text-slate-500 text-base">
+          yang terpercaya dan kompeten untuk mendukung bisnis Anda.
+        </p>
       </div>
     </div>
   );
